@@ -545,6 +545,22 @@
 
     /* Portfólio */
 
+    .real-portfolio .portfolio-media {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #111;
+    }
+    .real-portfolio .portfolio-media img,
+    .real-portfolio .portfolio-media video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .real-portfolio .video-media video { object-fit: contain; }
+    .real-portfolio .portfolio-card { overflow: hidden; }
     .portfolio-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1138,68 +1154,63 @@
 
     <section class="section" id="portfolio">
       <div class="container">
-        <p class="section-label">Portfólio demonstrativo</p>
-        <h2 class="section-title">
-          Ideias que dão forma à
-          <span class="accent">identidade.</span>
-        </h2>
+        <p class="section-label">Trabalhos selecionados</p>
+        <h2 class="section-title">Projetos que dão vida à <span class="accent">sua marca.</span></h2>
         <p class="section-description">
-          Estes são conceitos visuais de exemplo. Eles ilustram
-          diferentes direções criativas e não representam clientes
-          ou resultados reais.
+          Uma seleção de peças criativas, conteúdos e vídeos produzidos para comunicação digital.
         </p>
 
-        <div class="portfolio-grid">
+        <div class="portfolio-grid real-portfolio">
           <article class="portfolio-card">
-            <div class="portfolio-art art-red">
-              <span class="art-category">Conceito 01 / Moda</span>
-              <strong>Vista sua essência.</strong>
-              <span class="art-category">IDENTIDADE • CONTEÚDO</span>
-            </div>
-            <div class="portfolio-info">
-              <h3>Moda e lifestyle</h3>
-              <p>
-                Uma proposta visual marcante para destacar estilo,
-                personalidade e lançamentos.
-              </p>
-            </div>
+            <a class="portfolio-media" href="imagens/IMG-20261019-WA0010.jpg" target="_blank" rel="noopener">
+              <img src="imagens/IMG-20261019-WA0010.jpg" alt="Trabalho de design do Estúdio França" loading="lazy">
+            </a>
+            <div class="portfolio-info"><span class="art-category">DESIGN • CRIATIVO</span><h3>Projeto visual 01</h3><p>Peça criativa para comunicação de marca.</p></div>
           </article>
-
           <article class="portfolio-card">
-            <div class="portfolio-art art-light">
-              <span class="art-category">Conceito 02 / Beleza</span>
-              <strong>O cuidado está nos detalhes.</strong>
-              <span class="art-category">ESTÉTICA • MARCA</span>
-            </div>
-            <div class="portfolio-info">
-              <h3>Beleza e bem-estar</h3>
-              <p>
-                Uma direção elegante para transmitir cuidado,
-                confiança e atenção aos detalhes.
-              </p>
-            </div>
+            <a class="portfolio-media" href="imagens/IMG-20261019-WA0011.jpg" target="_blank" rel="noopener">
+              <img src="imagens/IMG-20261019-WA0011.jpg" alt="Trabalho de design do Estúdio França" loading="lazy">
+            </a>
+            <div class="portfolio-info"><span class="art-category">DESIGN • CRIATIVO</span><h3>Projeto visual 02</h3><p>Conteúdo desenvolvido para presença digital.</p></div>
           </article>
-
           <article class="portfolio-card">
-            <div class="portfolio-art art-dark">
-              <span class="art-category">Conceito 03 / Negócios</span>
-              <strong>Seu próximo capítulo começa aqui.</strong>
-              <span class="art-category">ESTRATÉGIA • DIGITAL</span>
+            <a class="portfolio-media" href="imagens/Screenshot_20261019_121428_Instagram.jpg" target="_blank" rel="noopener">
+              <img src="imagens/Screenshot_20261019_121428_Instagram.jpg" alt="Projeto publicado no Instagram" loading="lazy">
+            </a>
+            <div class="portfolio-info"><span class="art-category">SOCIAL MEDIA</span><h3>Conteúdo para Instagram</h3><p>Exemplo de conteúdo e comunicação social.</p></div>
+          </article>
+          <article class="portfolio-card">
+            <a class="portfolio-media" href="imagens/Screenshot_20261019_121441_Instagram.jpg" target="_blank" rel="noopener">
+              <img src="imagens/Screenshot_20261019_121441_Instagram.jpg" alt="Projeto publicado no Instagram" loading="lazy">
+            </a>
+            <div class="portfolio-info"><span class="art-category">SOCIAL MEDIA</span><h3>Conteúdo para Instagram</h3><p>Uma peça para fortalecer a identidade da marca.</p></div>
+          </article>
+          <article class="portfolio-card">
+            <a class="portfolio-media" href="imagens/Screenshot_20261019_121823_Canva.jpg" target="_blank" rel="noopener">
+              <img src="imagens/Screenshot_20261019_121823_Canva.jpg" alt="Projeto criativo desenvolvido no Canva" loading="lazy">
+            </a>
+            <div class="portfolio-info"><span class="art-category">DESIGN</span><h3>Criação visual</h3><p>Composição gráfica para comunicação digital.</p></div>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-media video-media">
+              <video controls preload="metadata" playsinline>
+                <source src="imagens/1003146515_1792152853621506.mp4" type="video/mp4">
+                Seu navegador não consegue reproduzir este vídeo.
+              </video>
             </div>
-            <div class="portfolio-info">
-              <h3>Marcas e serviços</h3>
-              <p>
-                Uma proposta moderna para comunicar valor,
-                profissionalismo e clareza.
-              </p>
+            <div class="portfolio-info"><span class="art-category">VÍDEO • CONTEÚDO</span><h3>Vídeo de portfólio 01</h3><p>Conteúdo audiovisual para canais digitais.</p></div>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-media video-media">
+              <video controls preload="metadata" playsinline>
+                <source src="imagens/635709364_1792152632060323.mp4" type="video/mp4">
+                Seu navegador não consegue reproduzir este vídeo.
+              </video>
             </div>
+            <div class="portfolio-info"><span class="art-category">VÍDEO • CONTEÚDO</span><h3>Vídeo de portfólio 02</h3><p>Mais um trabalho audiovisual do Estúdio França.</p></div>
           </article>
         </div>
-
-        <p class="concept-note">
-          Tem um negócio e quer uma identidade própria?
-          Vamos conversar sobre o seu projeto.
-        </p>
+        <p class="concept-note">Quer um trabalho assim para sua marca? <a href="#contato">Vamos conversar sobre seu projeto.</a></p>
       </div>
     </section>
 
