@@ -157,16 +157,21 @@
       flex-shrink: 0;
     }
 
-    .brand-symbol {
-      display: grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 9px;
-      background: var(--red);
-      font-weight: 900;
-      font-size: 1.1rem;
-      letter-spacing: -1px;
+    .brand-logo {
+      display: block;
+      width: 190px;
+      max-width: 38vw;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .footer-logo {
+      display: block;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: contain;
+      flex-shrink: 0;
     }
 
     .brand-name {
@@ -902,7 +907,7 @@
   <header class="header">
     <div class="container nav">
       <a class="brand" href="#inicio" aria-label="Estúdio França, início">
-        <span class="brand-symbol">EF.</span>
+        <img class="brand-logo" src="file_00000000d5b071fb9311b81f4fc81660.png" alt="Estúdio França — Marketing, Consultoria e Estratégia">
         <span>
           <span class="brand-name">ESTÚDIO FRANÇA</span>
           <span class="brand-subtitle">MARKETING & CONTEÚDO</span>
@@ -1261,7 +1266,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a class="brand" href="#inicio">
-        <span class="brand-symbol">EF.</span>
+        <img class="footer-logo" src="file_00000000afc071f5b8df5041e6c0c538.png" alt="Logo circular do Estúdio França">
         <span>
           <span class="brand-name">ESTÚDIO FRANÇA</span>
           <span class="brand-subtitle">MARKETING & CONTEÚDO</span>
